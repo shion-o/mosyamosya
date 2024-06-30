@@ -3,3 +3,37 @@ body {
   background-color: rgb(255, 255, 255);
   color: rgb(0, 0, 0);
 }
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.4s;
+}
+a:hover {
+  opacity: 0.6;
+  transition: all 0.4s;
+}
+
+.mainWrap {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 2px solid #246436;
+  border-radius: 20px;
+}
+
+.linkWrap {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: start;
+}
+
+.linkItem {
+  color: #246436;
+}
+.linkItem::before {
+  content: "▶︎";
+  top: 0;
+  right: 0;
+}
